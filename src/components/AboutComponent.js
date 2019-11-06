@@ -3,8 +3,6 @@ import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'r
 import { Link } from 'react-router-dom';
 
 
-
-
 const RenderLeader = ({leaders}) => {
     const a = leaders.map( leader => { 
         return( 
@@ -36,13 +34,6 @@ const RenderLeader = ({leaders}) => {
 
 
 function About(props) {
-
-    const leaders = props.leaders.map((leader) => {
-        return (
-            <p>Leader {leader.name}</p>
-        );
-    });
-
     return(
         <div className="container">
             <div className="row">
